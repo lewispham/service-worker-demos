@@ -1,0 +1,14 @@
+{
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "mime": "^2.2.0"
+    },
+    "name": "service-worker-demo",
+    "version": "0.1.0",
+    "description": "demo some features related to service worker",
+    "main": "index.js",
+    "author": "Lewis Pham",
+    "license": "MIT"
+}
