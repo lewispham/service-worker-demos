@@ -1,11 +1,16 @@
 <html>
     <head>
-        <script src="/websocket.js"></script>
+        <script src="/websocket.js" async></script>
         <script src="/service-worker-init.js" async></script>
+        <script src="/upload-files.js" async></script>
     </head>
     <body>
         <div id="app">
-            <h1>Hello guys, I am ServiceWorker.</h1>
+            <h1 style="text-align: center; margin: 100px 0;">Service Worker Demo Page</h1>
+            <div style="text-align: center">
+                <h2>Upload files</h2>
+                <input class="upload-files" type="file" multiple style="font-size: 16px">
+            </div>
         </div>
     </body>
 </html>
