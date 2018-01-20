@@ -1,2 +1,3 @@
 const httpServer = require('./http-server.js');
-httpServer.init();
+const wss = require('./websocket-server.js');
+wss.init(httpServer.init());
