@@ -3,7 +3,8 @@
         "start": "node index.js"
     },
     "dependencies": {
-        "mime": "^2.2.0"
+        "mime": "^2.2.0",
+        "uws": "^9.14.0"
     },
     "name": "service-worker-demo",
     "version": "0.1.0",
