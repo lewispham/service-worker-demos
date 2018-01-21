@@ -1,4 +1,4 @@
-## Presequisites
+## Prerequisites
 - [Homebrew](https://brew.sh/)
 
 ## Installation
@@ -9,6 +9,10 @@ cd service-worker-demos
 bash install.sh
 ```
 ## Usage
+- Start Node.js server
 ```
+// make sure there is no existing web server running on port 80 then execute
 sudo yarn start
 ```
+- Navigate to `localhost` on browsers
+- Enjoy the demo
