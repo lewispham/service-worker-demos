@@ -5,6 +5,7 @@ let uploader = new class {
             if(files.length === 0) {
                 return;
             }
+            this.showImageLinks(files);
             navigator.onLine ? ws.uploadFiles(files) : this.cacheFiles(files);
         };
     }
@@ -22,6 +23,17 @@ let uploader = new class {
         }).then(() => {
             console.log('All uploaded files are cached');
         });
+    }
+    showImageLinks(files) {
+        let listEl = document.querySelector('.images');
+        listEl.innerHTML = '';
+        for(let file of files) {            
+            listEl.innerHTML += `
+                <li>
+                    <a href="/files/${file.name}" target="_blank">${file.name}</a>
+                </li>
+            `;
+        }
     }
 }
 uploader.init();
